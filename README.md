@@ -14,9 +14,16 @@ Primary Contributions:
 * Additionally, we introduce a clustering module from ccc-wav2vec 2.0, to cluster the quantized representations and diminish the effect of negatives in the contrastive loss computation that fall into the same cluster as the positive.
 
 ## Models
-Will be made available soon...
+The WERs specified are without the use of any language model.
 
-* Pre-training and fine-tuning procedure can be found [here](https://github.com/Speech-Lab-IITM/data2vec-aqc/examples/data2vec).
+Model | Pre-training data | Fine-tuning data | Model Link | WER (test-clean \| test-other)
+|---|---|---|---|---
+data2vec Base | LibriSpeech-360h | No fine-tuning | [download](https://drive.google.com/file/d/1jlgMvQ9ssEjEGme4Q-lSpJ4TYCaqrVq0/view?usp=share_link) | ---
+data2vec Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1VwpO_caMEYLqb4yqftH9cgqDQhHGfmZe/view?usp=share_link) | 6.4 \| 17.7
+data2vec-aqc Base | LibriSpeech-360h | No fine-tuning | [download](https://drive.google.com/file/d/1OUZjib4tkdxt_2nHfdEyEbyic3_rbCOH/view?usp=share_link) | ---
+data2vec-aqc Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1ayCrZ2zM3GhZMhNEj0mPJp74pHq37Tmz/view?usp=share_link) | 5.5 \| 14.0
+
+* Pre-training and fine-tuning procedures can be found [here](https://github.com/Speech-Lab-IITM/data2vec-aqc/examples/data2vec).
 
 ## Requirements and Installation
 
