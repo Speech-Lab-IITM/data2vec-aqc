@@ -13,15 +13,28 @@ Primary Contributions:
 * We add a quantizer module similar to wav2vec 2.0, as sampling negatives from the quantized representations has been proven to be effective.
 * Additionally, we introduce a clustering module from ccc-wav2vec 2.0, to cluster the quantized representations and diminish the effect of negatives in the contrastive loss computation that fall into the same cluster as the positive.
 
+## SUPERB Benchmark
+
+The data2vec-aqc BASE model pre-trained on LibriSpeech-960h has been evaluated on the multiple downstream tasks over the [SUPERB benchmark](https://superbbenchmark.org/leaderboard?subset=Public+Set). The proposed method comprehensively outperforms the baseline data2vec BASE model over the array of downstream tasks presented over SUPERB.
+
+<p align="center">
+  <img src="docs/aqc_superb.jpg" width="700">
+</p>
+
 ## Models
 The WERs specified are without the use of any language model.
 
 Model | Pre-training data | Fine-tuning data | Model Link | WER (test-clean \| test-other)
 |---|---|---|---|---
+wav2vec Base | LibriSpeech-360h | No fine-tuning | [download](https://drive.google.com/file/d/1nM4DLwTP62Iu5yOeGgdmekDh4OFZeNCp/view?usp=share_link) | ---
+wav2vec Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1qhAa5_4eXutegp6fEAX2Ap0tIGZPWskL/view?usp=share_link) | 7.5 \| 20.2
 data2vec Base | LibriSpeech-360h | No fine-tuning | [download](https://drive.google.com/file/d/1jlgMvQ9ssEjEGme4Q-lSpJ4TYCaqrVq0/view?usp=share_link) | ---
 data2vec Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1VwpO_caMEYLqb4yqftH9cgqDQhHGfmZe/view?usp=share_link) | 6.4 \| 17.7
 data2vec-aqc Base | LibriSpeech-360h | No fine-tuning | [download](https://drive.google.com/file/d/1OUZjib4tkdxt_2nHfdEyEbyic3_rbCOH/view?usp=share_link) | ---
 data2vec-aqc Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1ayCrZ2zM3GhZMhNEj0mPJp74pHq37Tmz/view?usp=share_link) | 5.5 \| 14.0
+data2vec-aqc Base | LibriSpeech-960h | No fine-tuning | [download](https://drive.google.com/file/d/1H35MHmUW8qjkhICA233wPE7QXPTJiT6R/view?usp=share_link) | ---
+data2vec-aqc Base | LibriSpeech-960h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1ydgk1m0E5UEZniD5CWN_PAIHrMePftzk/view?usp=share_link) | 4.8 \| 9.5
+data2vec-aqc Base SUPERB | LibriSpeech-960h | No fine-tuning | [SUPERB benchmark submission](https://drive.google.com/file/d/1-Q7CVsBPUIXt91qLoXiRriAj9wNl_bgx/view?usp=share_link) | ---
 
 * Pre-training and fine-tuning procedures can be found [here](https://github.com/Speech-Lab-IITM/data2vec-aqc/examples/data2vec).
 
