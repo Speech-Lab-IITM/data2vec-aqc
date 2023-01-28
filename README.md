@@ -36,7 +36,7 @@ data2vec-aqc Base | LibriSpeech-960h | No fine-tuning | [download](https://drive
 data2vec-aqc Base | LibriSpeech-960h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1ydgk1m0E5UEZniD5CWN_PAIHrMePftzk/view?usp=share_link) | 4.8 \| 9.5
 data2vec-aqc Base SUPERB | LibriSpeech-960h | No fine-tuning | [SUPERB benchmark submission](https://drive.google.com/file/d/1-Q7CVsBPUIXt91qLoXiRriAj9wNl_bgx/view?usp=share_link) | ---
 
-* Pre-training and fine-tuning procedures can be found [here](https://github.com/Speech-Lab-IITM/data2vec-aqc/examples/data2vec).
+* Pre-training and fine-tuning procedures can be found [here](https://github.com/Speech-Lab-IITM/data2vec-aqc/tree/master/examples/data2vec).
 
 ## Requirements and Installation
 
