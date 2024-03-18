@@ -1,6 +1,6 @@
 # [data2vec-aqc](https://arxiv.org/abs/2211.01246)
 
-Paper Title: data2vec-aqc: Search for the right Teaching Assistant in the Teacher-Student training setup. Submitted to ICASSP 2023 ([arxiv link](https://arxiv.org/abs/2211.01246)).
+Paper Title: data2vec-aqc: Search for the right Teaching Assistant in the Teacher-Student training setup. At ICASSP 2023 ([arxiv link](https://arxiv.org/abs/2211.01246)).
 
 data2vec-aqc is a Self-Supervised Learning (SSL) algorithm for speech representation learning from unlabeled speech data. Our goal is to improve SSL for speech in domains where both unlabeled and labeled data are limited. Building on the recently introduced data2vec, we introduce additional modules to the data2vec framework that leverage the benefit of data augmentations, quantized representations, and clustering. The interaction between these modules helps solve the cross-contrastive loss as an additional self-supervised objective.
 
@@ -26,15 +26,15 @@ The WERs specified are without the use of any language model.
 
 Model | Pre-training data | Fine-tuning data | Model Link | WER (test-clean \| test-other)
 |---|---|---|---|---
-wav2vec Base | LibriSpeech-360h | No fine-tuning | [download](https://drive.google.com/file/d/1nM4DLwTP62Iu5yOeGgdmekDh4OFZeNCp/view?usp=share_link) | ---
-wav2vec Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1qhAa5_4eXutegp6fEAX2Ap0tIGZPWskL/view?usp=share_link) | 7.5 \| 20.2
-data2vec Base | LibriSpeech-360h | No fine-tuning | [download](https://drive.google.com/file/d/1jlgMvQ9ssEjEGme4Q-lSpJ4TYCaqrVq0/view?usp=share_link) | ---
-data2vec Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1VwpO_caMEYLqb4yqftH9cgqDQhHGfmZe/view?usp=share_link) | 6.4 \| 17.7
-data2vec-aqc Base | LibriSpeech-360h | No fine-tuning | [download](https://drive.google.com/file/d/1OUZjib4tkdxt_2nHfdEyEbyic3_rbCOH/view?usp=share_link) | ---
-data2vec-aqc Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1ayCrZ2zM3GhZMhNEj0mPJp74pHq37Tmz/view?usp=share_link) | 5.5 \| 14.0
-data2vec-aqc Base | LibriSpeech-960h | No fine-tuning | [download](https://drive.google.com/file/d/1H35MHmUW8qjkhICA233wPE7QXPTJiT6R/view?usp=share_link) | ---
-data2vec-aqc Base | LibriSpeech-960h | LibriSpeech-100h | [download](https://drive.google.com/file/d/1ydgk1m0E5UEZniD5CWN_PAIHrMePftzk/view?usp=share_link) | 4.8 \| 9.5
-data2vec-aqc Base SUPERB | LibriSpeech-960h | No fine-tuning | [SUPERB benchmark submission](https://drive.google.com/file/d/1-Q7CVsBPUIXt91qLoXiRriAj9wNl_bgx/view?usp=share_link) | ---
+wav2vec Base | LibriSpeech-360h | No fine-tuning | [download](https://asr.iitm.ac.in/ssl_ckpts/data2vec-aqc/360h/wav2vec2_base_360h_88750_updates.pt) | ---
+wav2vec Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://asr.iitm.ac.in/ssl_ckpts/data2vec-aqc/360h/wav2vec2_base_360h_100h_88750_updates.pt) | 7.5 \| 20.2
+data2vec Base | LibriSpeech-360h | No fine-tuning | [download](https://asr.iitm.ac.in/ssl_ckpts/data2vec-aqc/360h/data2vec_base_360h.pt) | ---
+data2vec Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://asr.iitm.ac.in/ssl_ckpts/data2vec-aqc/360h/data2vec_base_360h_100h.pt) | 6.4 \| 17.7
+data2vec-aqc Base | LibriSpeech-360h | No fine-tuning | [download](https://asr.iitm.ac.in/ssl_ckpts/data2vec-aqc/360h/data2vec-aqc_base_360h.pt) | ---
+data2vec-aqc Base | LibriSpeech-360h | LibriSpeech-100h | [download](https://asr.iitm.ac.in/ssl_ckpts/data2vec-aqc/360h/data2vec-aqc_base_360h_100h.pt) | 5.5 \| 14.0
+data2vec-aqc Base | LibriSpeech-960h | No fine-tuning | [download](https://asr.iitm.ac.in/ssl_ckpts/data2vec-aqc/960h/data2vec-aqc_base_960h.pt) | ---
+data2vec-aqc Base | LibriSpeech-960h | LibriSpeech-100h | [download](https://asr.iitm.ac.in/ssl_ckpts/data2vec-aqc/960h/data2vec-aqc_base_960h_100h.pt) | 4.8 \| 9.5
+data2vec-aqc Base SUPERB | LibriSpeech-960h | No fine-tuning | [SUPERB benchmark submission](https://asr.iitm.ac.in/ssl_ckpts/data2vec-aqc/960h/data2vec-aqc_base_960h_SUPERB.pt) | ---
 
 * Pre-training and fine-tuning procedures can be found [here](https://github.com/Speech-Lab-IITM/data2vec-aqc/tree/master/examples/data2vec).
 
